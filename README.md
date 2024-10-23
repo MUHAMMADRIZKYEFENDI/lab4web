@@ -126,7 +126,7 @@ background-color: #2b83ea;
 }
 ```
 Kemudian lihat hasilnya. 
-![Screenshot (243)](https://github.com/user-attachments/assets/6d38fe7b-e1a1-47af-969a-4d9068895793)
+![Screenshot (244)](https://github.com/user-attachments/assets/d6587fe7-bdc6-417c-9845-5964e19bde17)
 # Membuat Hero Panel. 
 Selanjutnya membuat hero panel. Tambahkan kode HTML dan CSS seperti berikut. 
 ```
@@ -160,7 +160,7 @@ pretium ac.</p>
 }
 ```
 gambarnya
-![Screenshot (244)](https://github.com/user-attachments/assets/d6587fe7-bdc6-417c-9845-5964e19bde17)
+![Screenshot (245)](https://github.com/user-attachments/assets/39c56d3d-646c-4602-9f15-261050f242cf)
 # Mengatur Layout Main dan Sidebar 
 Selanjutnya mengatur main content dan sidebar, tambahkan CSS float.
 ```
@@ -239,4 +239,149 @@ line-height:25px;
 } 
 ```
 gambar
-
+![Screenshot (247)](https://github.com/user-attachments/assets/8eb8cbb3-a8bc-479c-a24c-6f2f265985d5)
+# Mengatur Footer 
+Selanjutnya mengatur tampilan footer. Tambahkan CSS untuk footer. 
+/* footer */ 
+footer { 
+clear:both; 
+background-color:#1d1d1d; 
+padding:20px; 
+color:#eee; 
+}
+gambar
+![Screenshot (247)](https://github.com/user-attachments/assets/8eb8cbb3-a8bc-479c-a24c-6f2f265985d5)
+# Menambahkan Elemen lainnya pada Main Content 
+ ```
+<section id="main"> 
+    <div class="row"> 
+        <div class="box"> 
+            <img src="https://dummyimage.com/120/db7d25/fff.png" alt="" 
+class="image-circle"> 
+            <h3>Heading</h3> 
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p> 
+            <a href="#" class="btn btn-default">View detail</a> 
+        </div> 
+        <div class="box"> 
+            <img src="https://dummyimage.com/120/3e73e6/fff.png" alt="" 
+class="image-circle"> 
+            <h3>Heading</h3> 
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p> 
+            <a href="#" class="btn btn-default">View detail</a> 
+        </div> 
+        <div class="box"> 
+            <img src="https://dummyimage.com/120/71e6d4/fff.png" alt="" 
+class="image-circle"> 
+            <h3>Heading</h3> 
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p> 
+            <a href="#" class="btn btn-default">View detail</a> 
+        </div> 
+    </div> 
+</section> 
+ ```
+# Kemudian tambahkan CSS. 
+```/* box */ 
+.box { 
+    display:block; 
+    float:left; 
+    width:33.333333%; 
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box;
+ padding:0 10px; 
+    text-align:center; 
+} 
+ 
+.box h3 { 
+    margin: 15px 0; 
+} 
+ 
+.box p { 
+    line-height: 20px; 
+    font-size: 14px; 
+    margin-bottom: 15px; 
+} 
+ 
+box img { 
+    border: 0; 
+    vertical-align: middle; 
+} 
+ 
+.image-circle { 
+    border-radius: 50%; 
+} 
+ 
+.row { 
+    margin: 0 -10px; 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+ 
+.row:after, .row:before, 
+.entry:after, .entry:before { 
+    content:''; 
+    display:table; 
+} 
+ 
+.row:after, 
+.entry:after { 
+    clear:both; 
+} 
+```
+Lihat hasilnya dibrowser.
+![Screenshot (248)](https://github.com/user-attachments/assets/d8aa6d91-fad5-45ca-83d0-fe7c0fd65ff0)
+# Menambahkan Content Artikel 
+Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content. 
+```<hr class="divider" /> 
+<article class="entry"> 
+    <h2>First featurette heading.</h2> 
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+pretium ac.</p> 
+</article> 
+<hr class="divider" /> 
+<article class="entry"> 
+    <h2>First featurette heading.</h2> 
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="" 
+class="right-img"> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+pretium ac.</p> 
+</article> 
+ ```
+# Kemudian tambahkan CSS. 
+```.divider { 
+    border:0; 
+    border-top:1px solid #eeeeee; 
+    margin:40px 0; 
+} 
+ 
+/* entry */ 
+.entry { 
+    margin: 15px 0; 
+} 
+ 
+.entry h2 { 
+    margin-bottom: 20px; 
+} 
+.entry p { 
+line-height: 25px; 
+} 
+.entry img { 
+float: left; 
+border-radius: 5px; 
+margin-right: 15px; 
+} 
+.entry .right-img { 
+float: right; 
+}
+```
+hasil browsernya
+![Screenshot (249)](https://github.com/user-attachments/assets/d68cd2b3-001c-4154-a8d3-b6301b80070a)
