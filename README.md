@@ -104,3 +104,139 @@ Selanjutnya buka browser dan refresh kembali.
 </footer>
 ```
 Kemudian buka browser dan lihat hasilnya.
+![Screenshot (242)](https://github.com/user-attachments/assets/9b186984-2ca2-4d9e-9abd-abe14bf494b5)
+# Membuat Navigasi 
+Kemudian selanjutnya mengatur navigasi. 
+```/* navigasi */ 
+nav { 
+display: block; 
+background-color: #1f5faa; 
+} 
+nav a { 
+padding: 15px 30px; 
+display: inline-block; 
+color: #ffffff; 
+font-size: 14px; 
+text-decoration: none; 
+font-weight: bold; 
+} 
+nav a.active, 
+nav a:hover { 
+background-color: #2b83ea; 
+}
+```
+Kemudian lihat hasilnya. 
+![Screenshot (243)](https://github.com/user-attachments/assets/6d38fe7b-e1a1-47af-969a-4d9068895793)
+# Membuat Hero Panel. 
+Selanjutnya membuat hero panel. Tambahkan kode HTML dan CSS seperti berikut. 
+```
+<section id="hero"> 
+    <h1>Hello World!</h1> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+pretium ac.</p> 
+    <a href="home.html" class="btn btn-large">Learn more &raquo;</a> 
+</section> 
+ ```
+# cssnya
+```
+/* Hero Panel */ 
+#hero { 
+    background-color: #e4e4e5; 
+    padding: 50px 20px; 
+    margin-bottom: 20px; 
+} 
+ 
+#hero h1 { 
+    margin-bottom: 20px; 
+    font-size: 35px; 
+} 
+ 
+#hero p { 
+    margin-bottom: 20px; 
+    font-size: 18px; 
+    line-height: 25px; 
+}
+```
+gambarnya
+![Screenshot (244)](https://github.com/user-attachments/assets/d6587fe7-bdc6-417c-9845-5964e19bde17)
+# Mengatur Layout Main dan Sidebar 
+Selanjutnya mengatur main content dan sidebar, tambahkan CSS float.
+```
+/* main content */ 
+#wrapper { 
+    margin: 0; 
+}
+#main { 
+    float: left; 
+    width: 640px; 
+    padding: 20px; 
+} 
+ 
+/* sidebar area */ 
+#sidebar { 
+    float: left; 
+    width: 260px; 
+    padding: 20px; 
+}
+```
+# Membuat Sidebar Widget 
+Kemudian selanjutnya menambahkan element lain dalam sidebar. 
+```
+<aside id="sidebar"> 
+    <div class="widget-box"> 
+        <h3 class="title">Widget Header</h3> 
+        <ul> 
+            <li><a href="#">Widget Link</a></li> 
+            <li><a href="#">Widget Link</a></li> 
+            <li><a href="#">Widget Link</a></li> 
+            <li><a href="#">Widget Link</a></li> 
+            <li><a href="#">Widget Link</a></li> 
+        </ul> 
+    </div> 
+    <div class="widget-box"> 
+        <h3 class="title">Widget Text</h3> 
+        <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt 
+arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer 
+pharetra est nunc, nec pretium nunc pretium ac.</p> 
+    </div> 
+</aside> 
+ ```
+# Kemudian tambahkan CSS. 
+```
+/* widget */ 
+.widget-box { 
+    border:1px solid #eee; 
+    margin-bottom:20px; 
+} 
+ 
+.widget-box  .title { 
+    padding:10px 16px; 
+    background-color:#428bca; 
+    color:#fff; 
+} 
+ 
+.widget-box ul { 
+    list-style-type:none; 
+} 
+ 
+.widget-box li { 
+    border-bottom:1px solid #eee;
+} 
+.widget-box li a { 
+padding:10px 16px; 
+color:#333; 
+display:block; 
+text-decoration:none; 
+} 
+.widget-box li:hover a { 
+background-color:#eee; 
+} 
+.widget-box p { 
+padding:15px; 
+line-height:25px; 
+} 
+```
+gambar
+
