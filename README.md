@@ -721,6 +721,7 @@ span {
 ```
 HASIL BROWSERNYA
 
+![Screenshot (253)](https://github.com/user-attachments/assets/ce0abf14-c3bc-47b2-80a7-5fe50fa4be94)
 
 # MENU CONTACT
 HTML NYA
@@ -753,6 +754,7 @@ HTML NYA
 </html>
 ```
 CSSNYA
+```
 /* Reset default styles */
 * {
     margin: 0;
@@ -854,5 +856,7 @@ button[type="submit"]:hover {
     }
 }
 ```
+
 HASIL BROWSERNYA
 
+![Screenshot (254)](https://github.com/user-attachments/assets/656b089b-46b9-4a2f-9e14-a15830c47764)
